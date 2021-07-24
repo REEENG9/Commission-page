@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 폰트정의 */
+@font-face {
+  src: url(font/BMJUA_ttf.ttf);
+  font-family: "Jua";
+}
+@font-face {
+  src: url(font/BMHANNAPro.ttf);
+  font-family: "Hanna";
+}
+@font-face {
+  src: url(font/NanumGothic.ttf);
+  font-family: "NG";
+}
+
+/* 전체 배경화면 */
+body {
+  background-color: #f7c3c3;
+}
+
+/* 리스트 불릿 없애기 */
+ul {
+  list-style: none;
+}
+
+
+/* 로고 상단바 영역 */
+#upperBar {
+  
+  width: 100%;
+  height: 50px;
+  background-color: white;
+}
+#logo a{
+  float: left;
+  width: 225px;
+  height: 50px;
+  background: url(media/mainlogo.png) center center no-repeat;
+}
+
+
+/* 네비게이터 */
+nav {
+  position: absolute; 
+  width: 100%;
+  height: 80px;
+  background:rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+/* 메인 메뉴 */
+#topMenu {
+  position: absolute;
+  margin:0;
+  padding: 0px 50px 0px 50px;
+  height : 50px;
+  z-index: 1;
+}
+#topMenu > li {
+  position: relative;
+  float: left;
+}
+#topMenu > li > a {
+  text-decoration : none;
+  display: block;
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: Jua;
+  padding: 25px 60px;
+}
+#topMenu > li > a:hover {
+  color: #FFD6D6;
+}
+
+/* 서브 메뉴 */
+#topMenu > li > ul {
+  float: none;
+  display: none;
+  position: absolute;
+  width: 180px;
+  margin: 0;
+  background:rgba(0, 0, 0, 0.8);
+}
+#topMenu > li > ul > li {
+  padding: 10px 10px 10px 30px;
+}
+#topMenu > li > ul > li > a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  color: white;
+}
+#topMenu > li:hover > ul {
+  display: block;
+  z-index: 10;
+}
+#topMenu > li > ul > li > a:hover {
+  color: #ff4e4e;
+}
+
+
+/* 슬라이드 영역 */
+#slideShow {
+  clear: both;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+#slide {
+  position: absolute;
+}
+#slide > img {
+  width: 100%;
+  float: left;
+}
+
+
+/* 퀵 링크 */
+#links {
+  position: absolute;
+  width: 100%;
+  padding: 0px 50px 0px 50px;
+  height : 150px;
+  z-index: 1;
+  background-color: #ffe6e6;
+}
+#links ul {
+  display: block;
+  padding: 0;
+  overflow: hidden;
+}
+#links ul li { 
+  float: left;
+  width: 33%;
+  text-align: center;
+  margin: 10px 0;
+}
+#links ul li a span {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  
+}
+#link1 {
+  background-image: url('media/infocm.png');
+}
+#link2 {
+  background-image: url('media/samp.png');
+}
+#link3 {
+  background-image: url('media/application.png');
+}
+#links ul li a {
+  text-decoration: none;
+}
+#links ul li a p {
+  margin: 15px; 
+  font-weight: 400;
+  font-family: Hanna;
+  font-size: 20px;
+  color: #ff5858;
+}
+
+
+/* 세부 내용 영역 */
+#contents {
+  height: 100%;
+  margin: 0 10% 0 10%;
+}
+
+#mainCont {
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  border-left: 3px solid gray;
+  border-right: 3px solid gray;
+  background-color: white;
+  font-family: NG;
+}
+
+.pro {
+  text-align: center;
+  font-family: Jua;
+  font-weight: 30
+}
+.hd {
+  font-family: Hanna;
+}
+.strong {
+  font-family: Jua;
+  font-weight: 30;
+  font-size: 20px;
+}
+
+/* 푸터 */
+footer {
+  width: 100%;
+  height: 100px;
+  border-top: 2px solid #222;
+}
+
+#bottomMenu {
+  width: 100%;
+  height: 20px;
+  position: relative;
+}
+#bottomMenu ul {
+  margin-top: 15px;
+}
+#bottomMenu ul li {
+  float: left;
+  padding: 5px 20px;
+  border-right: 1px solid #ddd;
+}
+#bottomMenu ul li:last-child {
+  border-right: none;
+}
+#bottomMenu ul li a, #bottomMenu ul li a:visited {
+  font-size: 15px;
+  color: #666;
+}
+
+#sns {
+  position: absolute;
+  right: 20px;
+}
+#sns ul li {
+  border: none;
+  padding: 10px;
+}
+
+#company {
+  clear: left;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+/* 기타 html 파일 */
+fieldset li {
+  margin: 10px;
+}
